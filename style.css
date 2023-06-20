@@ -148,7 +148,7 @@ span {
 
 span:hover {
   animation-name: font-color-change;
-  animation-duration: 3s;
+  animation-duration: 5s;
 }
 
 .headline p {
