@@ -1,17 +1,9 @@
 Page titles - no issues found.
-Image text alternatives - no issues found.
+Image text alternatives - alternative text missing https://github.com/Nessrine88/Portfolio.github.io/blob/932c34126ad26c10bca155e5eb7b9610bfd5538a/index.html#LL45C68-L45C68
 Text headings - no issues found.
-Color contrast - changes made in link to corresponding line of code in the pull request.
+Color contrast - no issues found
 Resize - no issues found.
-Interaction - changes made in link to corresponding line of code in the pull request.
+Interaction -no issues found
 Moving content - no issues found.
-Multimedia - changes made in link to corresponding line of code in the pull request.
-Basic structure of the page - no issues found.Page titles - no issues found.
-Image text alternatives - no issues found.
-Text headings - no issues found.
-Color contrast - changes made in link to corresponding line of code in the pull request.
-Resize - no issues found.
-Interaction - changes made in link to corresponding line of code in the pull request.
-Moving content - no issues found.
-Multimedia - changes made in link to corresponding line of code in the pull request.
+Multimedia - no issues found
 Basic structure of the page - no issues found.
