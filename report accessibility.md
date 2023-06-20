@@ -1,5 +1,5 @@
 1.Page titles - no issues found.<br>
-2.Image text alternatives - alternative text missing <br>https://github.com/Nessrine88/Portfolio.github.io/blob/932c34126ad26c10bca155e5eb7b9610bfd5538a/index.html#LL45C68-L45C68<br>
+2.Image text alternatives - alternative text missing <br> https://github.com/Nessrine88/Portfolio.github.io/blob/b0d79e38d0a39d706774a1e321de2a785dd60da2/index.html#L224-L230
 3.Text headings - no issues found.<br>
 4.Color contrast - no issues found<br>
 5.Resize - no issues found.<br>
