@@ -7,4 +7,4 @@
 7.Moving content - no issues found.<br>
 8.Multimedia - no issues found<br>
 9.Basic structure of the page - Put the right semantic tag https://github.com/Nessrine88/Portfolio.github.io/blob/eb9c87a20d03c19ad35ebf91a20efc2ef942f4b4/index.html#L14
-10.Interaction and labels - 
+10.Interaction and labels - Add labels to the contact form https://github.com/Nessrine88/Portfolio.github.io/blob/9b4fb717583d68e68c751b0419ca339b6f669817/index.html#L208-L220
