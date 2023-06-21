@@ -7,3 +7,4 @@
 7.Moving content - no issues found.<br>
 8.Multimedia - no issues found<br>
 9.Basic structure of the page - Put the right semantic tag https://github.com/Nessrine88/Portfolio.github.io/blob/eb9c87a20d03c19ad35ebf91a20efc2ef942f4b4/index.html#L14
+10.Interaction and labels - 
