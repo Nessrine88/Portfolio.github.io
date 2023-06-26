@@ -70,12 +70,15 @@ body {
 
 #menuList.open {
   display: block;
+  margin-top: 2em;
 }
 
 .menu-bar {
   margin-left: 250px;
   margin-top: 50px;
   transition: all 0.5s ease-out;
+  display: inline-block;
+  font-size: 32px;
 }
 
 #closeButton {
@@ -83,56 +86,78 @@ body {
 }
 
 .close-button {
-    font-size: 20px;
-    font-weight: bold;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
+  font-size: 20px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
-  .close-icon {
-    display: none;
-    font-size: 32px;
-    transition: opacity 0.3s;
-    margin-top: 50px;
-    margin-left: 250px;
-  }
+.close-icon {
+  display: none;
+  font-size: 32px;
+  transition: opacity 0.3s;
+  margin-top: 50px;
+  margin-left: 250px;
+}
+
+.headline li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 5%;
+}
 
 #menuList.open ~ #menuIcon {
-    display: none;
-  }
+  display: none;
+}
 
 #menuList.open ~ #closeIcon {
-    display: inline-block;
-  }
-
-.menu-bar {
   display: inline-block;
-  font-size: 32px;
-  transition: transform 0.3s;
 }
 
-#menuList.open {
-  display: block;
-  margin-top: 2em;
+.skill-list li {
+  background-color: rgb(255, 255, 255);
+  padding: 12px;
+  border-radius: 8px;
+  color: #36b37e;
+  flex-wrap: wrap;
+  margin: 5px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  font-size: 12px;
+  margin-bottom: 10px;
+  justify-content: space-between;
 }
 
-#menuList.open ~ #closeButton {
-  display: block;
+.flex-list li {
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #3a4a42;
+  padding: 8px 12px;
+  margin: 2px;
+  background-color: #ebf0ee;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
 }
 
 #menuList.open li {
-  color: var(--theme-2-neutral-2, #3A4A42);
+  color: var(--theme-2-neutral-2, #3a4a42);
   font-size: 32px;
   font-weight: 600;
   line-height: 44px;
   margin-bottom: 2em;
   margin-right: 3em;
-  font-family: 'inter' , sans-serif;
+  font-family: 'inter', sans-serif;
 }
 
 #menuList.open li a {
-  color: #3A4A42;
+  color: #3a4a42;
 }
 
 a :hover {
@@ -231,13 +256,6 @@ span:hover {
   from {
     margin-left: 300%;
   }
-}
-
-.headline li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 3% 5%;
 }
 
 .social-media ul {
@@ -359,21 +377,6 @@ h3 {
   justify-content: center;
 }
 
-.flex-list li {
-  border-radius: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  color: #3a4a42;
-  padding: 8px 12px;
-  margin: 2px;
-  background-color: #ebf0ee;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 16px;
-}
-
 .button {
   display: flex;
   background-color: #36b37f;
@@ -415,21 +418,6 @@ h3 {
   to {
     background-color: #172b4d;
   }
-}
-
-.skill-list li {
-  background-color: rgb(255, 255, 255);
-  padding: 12px;
-  border-radius: 8px;
-  color: #36b37e;
-  flex-wrap: wrap;
-  margin: 5px;
-  font-weight: 600;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  font-size: 12px;
-  margin-bottom: 10px;
-  justify-content: space-between;
 }
 
 .line {
