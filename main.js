@@ -11,6 +11,13 @@
     menuList.classList.add("open");
   });
 
+  // Add event listener to the close icon
+  closeIcon.addEventListener("click", function() {
+    menuIcon.style.display = "inline-block";
+    closeIcon.style.display = "none";
+    menuList.classList.remove("open");
+  });
+
   // Add event listeners to the menu options
   var menuOptions = menuList.getElementsByTagName("a");
   for (var i = 0; i < menuOptions.length; i++) {
@@ -24,3 +31,11 @@
       targetSection.scrollIntoView({
         behavior: "auto"
       });
+
+      // Close the menu
+      menuIcon.style.display = "inline-block";
+      closeIcon.style.display = "none";
+      menuList.classList.remove("open");
+    });
+  }
+
