@@ -64,15 +64,17 @@ body {
   list-style: none;
 }
 
-.toolbar li {
-  padding: 0;
+#menuList {
   display: none;
 }
 
-.menu-bar img {
-  position: relative;
-  left: 4%;
-  top: 4%;
+#menuList.open {
+  display: block;
+}
+
+.menu-bar {
+  margin-left: 250px;
+  margin-top: 50px;
   transition: all 0.5s ease-out;
 }
 
