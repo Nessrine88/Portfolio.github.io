@@ -78,6 +78,63 @@ body {
   transition: all 0.5s ease-out;
 }
 
+#closeButton {
+  display: none;
+}
+
+.close-button {
+    font-size: 20px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .close-icon {
+    display: none;
+    font-size: 32px;
+    transition: opacity 0.3s;
+    margin-top: 50px;
+    margin-left: 250px;
+  }
+
+#menuList.open ~ #menuIcon {
+    display: none;
+  }
+
+#menuList.open ~ #closeIcon {
+    display: inline-block;
+  }
+
+.menu-bar {
+  display: inline-block;
+  font-size: 32px;
+  transition: transform 0.3s;
+}
+
+#menuList.open {
+  display: block;
+  margin-top: 2em;
+}
+
+#menuList.open ~ #closeButton {
+  display: block;
+}
+
+#menuList.open li {
+  color: var(--theme-2-neutral-2, #3A4A42);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  margin-bottom: 2em;
+  margin-right: 3em;
+  font-family: 'inter' , sans-serif;
+}
+
+#menuList.open li a {
+  color: #3A4A42;
+}
+
 a :hover {
   background-color: #b9f8de;
   box-shadow: 0 0 35px #36b37e;
