@@ -64,21 +64,117 @@ body {
   list-style: none;
 }
 
-.toolbar li {
-  padding: 0;
+#menuList {
   display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 9998;
+}
+
+#menuList.open {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  padding-left: 4%;
+  padding-top: 25%;
+  height: 100vh;
 }
 
 .menu-bar img {
-  position: relative;
-  left: 4%;
-  top: 4%;
+  margin-left: 250px;
+  margin-top: 50px;
   transition: all 0.5s ease-out;
+  display: inline-block;
+  font-size: 32px;
 }
 
-a :hover {
-  background-color: #b9f8de;
-  box-shadow: 0 0 35px #36b37e;
+#closeButton {
+  display: none;
+}
+
+.close-button {
+  font-size: 20px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.close-icon {
+  display: none;
+  font-size: 32px;
+  transition: opacity 0.3s;
+  margin-right: 35px;
+  margin-top: 35px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+
+.headline li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 5%;
+}
+
+#menuList.open ~ #menuIcon {
+  display: none;
+}
+
+#menuList.open ~ #closeIcon {
+  display: block;
+}
+
+.skill-list li {
+  background-color: rgb(255, 255, 255);
+  padding: 12px;
+  border-radius: 8px;
+  color: #36b37e;
+  flex-wrap: wrap;
+  margin: 5px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  font-size: 12px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.flex-list li {
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #3a4a42;
+  padding: 8px 12px;
+  margin: 2px;
+  background-color: #ebf0ee;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+#menuList.open li {
+  color: var(--theme-2-neutral-2, #3a4a42);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  margin-bottom: 40px;
+  font-family: 'inter', sans-serif;
+}
+
+#menuList.open li a {
+  color: #3a4a42;
 }
 
 header {
@@ -94,6 +190,9 @@ header {
   align-items: center;
   align-content: center;
   flex-direction: column;
+  background-image: url("images/header-illsutration-mobile@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .headline ul {
@@ -148,15 +247,6 @@ header {
   }
 }
 
-span {
-  color: #36b37e;
-}
-
-span:hover {
-  animation-name: font-color-change;
-  animation-duration: 5s;
-}
-
 .headline p {
   text-align: center;
   font-family: 'Inter', sans-serif;
@@ -172,13 +262,6 @@ span:hover {
   from {
     margin-left: 300%;
   }
-}
-
-.headline li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 3% 5%;
 }
 
 .social-media ul {
@@ -199,12 +282,6 @@ span:hover {
 
 .normal-button {
   margin-top: 100px;
-}
-
-.header {
-  background-image: url("images/header-illsutration-mobile@2x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .my-recent-work {
@@ -300,21 +377,6 @@ h3 {
   justify-content: center;
 }
 
-.flex-list li {
-  border-radius: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  color: #3a4a42;
-  padding: 8px 12px;
-  margin: 2px;
-  background-color: #ebf0ee;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 16px;
-}
-
 .button {
   display: flex;
   background-color: #36b37f;
@@ -356,21 +418,6 @@ h3 {
   to {
     background-color: #172b4d;
   }
-}
-
-.skill-list li {
-  background-color: rgb(255, 255, 255);
-  padding: 12px;
-  border-radius: 8px;
-  color: #36b37e;
-  flex-wrap: wrap;
-  margin: 5px;
-  font-weight: 600;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  font-size: 12px;
-  margin-bottom: 10px;
-  justify-content: space-between;
 }
 
 .line {
@@ -571,7 +618,12 @@ textarea {
   }
 
   .toolbar {
-    margin: 20px 0;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
   }
 
   .toolbar a {
@@ -584,6 +636,8 @@ textarea {
   .menu-bar {
     position: relative;
     left: 2%;
+    line-height: 2%;
+    font-size: 32px;
   }
 
   .toolbar li {
