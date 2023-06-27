@@ -69,11 +69,17 @@ body {
 }
 
 #menuList.open {
-  display: block;
   margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  margin-right: auto;
+  margin-left: 1.75em;
+  height: 100vh;
 }
 
-.menu-bar {
+.menu-bar img {
   margin-left: 250px;
   margin-top: 50px;
   transition: all 0.5s ease-out;
@@ -113,7 +119,7 @@ body {
 }
 
 #menuList.open ~ #closeIcon {
-  display: inline-block;
+  display: block;
 }
 
 .skill-list li {
@@ -151,18 +157,12 @@ body {
   font-size: 32px;
   font-weight: 600;
   line-height: 44px;
-  margin-bottom: 2em;
-  margin-right: 3em;
+  margin-bottom: 40px;
   font-family: 'inter', sans-serif;
 }
 
 #menuList.open li a {
   color: #3a4a42;
-}
-
-a :hover {
-  background-color: #b9f8de;
-  box-shadow: 0 0 35px #36b37e;
 }
 
 header {
@@ -178,6 +178,9 @@ header {
   align-items: center;
   align-content: center;
   flex-direction: column;
+  background-image: url("images/header-illsutration-mobile@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .headline ul {
@@ -232,15 +235,6 @@ header {
   }
 }
 
-span {
-  color: #36b37e;
-}
-
-span:hover {
-  animation-name: font-color-change;
-  animation-duration: 5s;
-}
-
 .headline p {
   text-align: center;
   font-family: 'Inter', sans-serif;
@@ -276,12 +270,6 @@ span:hover {
 
 .normal-button {
   margin-top: 100px;
-}
-
-.header {
-  background-image: url("images/header-illsutration-mobile@2x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .my-recent-work {
@@ -631,6 +619,8 @@ textarea {
   .menu-bar {
     position: relative;
     left: 2%;
+    line-height: 2%;
+    font-size: 32px;
   }
 
   .toolbar li {
