@@ -40,66 +40,66 @@ for (let i = 0; i < menuOptions.length; i += 1) {
 
 // popup-section
 
-// const body = document.querySelector("body");
-// const section = document.querySelector("#portofolio");
+ const body = document.querySelector("body");
+ const section = document.querySelector("#portofolio");
 
 // // Select cards and "See Project" buttons
-// const cards = section.querySelectorAll(".card");
-// const seeButtons = section.querySelectorAll(".button.see");
+const cards = section.querySelectorAll(".card");
+const seeButtons = section.querySelectorAll(".button.see");
 
 // // Define the content for each button
-// const buttonContent = [
-//   {
-//     title: "Button 1",
-//     imgSrc1: "images/Snapshoot Portfolio.png",
-//     imgSrc2: "images/snapshoot desktop.png",
-//     header: "Keeping track of hundreds of components",
-//     tech: ["JavaScript", "Ruby", "HTML", "CSS"],
-//     para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s."
-//   },
-//   {
-//     title: "Button 2",
-//     imgSrc1: "images/Snapshoot Portfolio2.png",
-//     imgSrc2: "images/snapshoot desktop2.png",
-//     header: "Popup Content for Button 2",
-//     tech: ["Python", "React", "Node.js", "MongoDB"],
-//     para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-//   },
-//   {
-//     title: "Button 3",
-//     imgSrc1: "images/Snapshoot Portfolio2.png",
-//     imgSrc2: "images/snapshoot desktop2.png",
-//     header: "Popup Content for Button 3",
-//     tech: ["Python", "React", "Node.js", "MongoDB"],
-//     para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-//   },
-//   {
-//     title: "Button 4",
-//     imgSrc1: "images/Snapshoot Portfolio2.png",
-//     imgSrc2: "images/snapshoot desktop2.png",
-//     header: "Popup Content for Button 4",
-//     tech: ["Python", "React", "Node.js", "MongoDB"],
-//     para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-//   },
-//   {
-//     title: "Button 5",
-//     imgSrc1: "images/Snapshoot Portfolio2.png",
-//     imgSrc2: "images/snapshoot desktop2.png",
-//     header: "Popup Content for Button 5",
-//     tech: ["Python", "React", "Node.js", "MongoDB"],
-//     para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-//   },
-//   {
-//     title: "Button 6",
-//     imgSrc1: "images/Snapshoot Portfolio2.png",
-//     imgSrc2: "images/snapshoot desktop2.png",
-//     header: "Popup Content for Button 7",
-//     tech: ["Python", "React", "Node.js", "MongoDB"],
-//     para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-//   }
-// ];
+const buttonContent = [
+  {
+    title: "Button 1",
+    imgSrc1: "images/Snapshoot Portfolio.png",
+    imgSrc2: "images/snapshoot desktop.png",
+    header: "Keeping track of hundreds of components",
+    tech: ["JavaScript", "Ruby", "HTML", "CSS"],
+    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s."
+  },
+  {
+    title: "Button 2",
+    imgSrc1: "images/Snapshoot Portfolio2.png",
+    imgSrc2: "images/snapshoot desktop2.png",
+    header: "Popup Content for Button 2",
+    tech: ["Python", "React", "Node.js", "MongoDB"],
+    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+  },
+  {
+    title: "Button 3",
+    imgSrc1: "images/Snapshoot Portfolio2.png",
+    imgSrc2: "images/snapshoot desktop2.png",
+    header: "Popup Content for Button 3",
+    tech: ["Python", "React", "Node.js", "MongoDB"],
+    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+  },
+  {
+    title: "Button 4",
+    imgSrc1: "images/Snapshoot Portfolio2.png",
+    imgSrc2: "images/snapshoot desktop2.png",
+    header: "Popup Content for Button 4",
+    tech: ["Python", "React", "Node.js", "MongoDB"],
+    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+  },
+  {
+    title: "Button 5",
+    imgSrc1: "images/Snapshoot Portfolio2.png",
+    imgSrc2: "images/snapshoot desktop2.png",
+    header: "Popup Content for Button 5",
+    tech: ["Python", "React", "Node.js", "MongoDB"],
+    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+  },
+  {
+    title: "Button 6",
+    imgSrc1: "images/Snapshoot Portfolio2.png",
+    imgSrc2: "images/snapshoot desktop2.png",
+    header: "Popup Content for Button 7",
+    tech: ["Python", "React", "Node.js", "MongoDB"],
+    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+  }
+];
 
-// // Event listener for "See Project" buttons
+ // Event listener for "See Project" buttons
 // seeButtons.forEach((button, index) => {
 //   button.addEventListener("click", () => {
 //     const card = cards[index];
