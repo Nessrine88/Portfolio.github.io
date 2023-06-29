@@ -77,6 +77,21 @@ body {
   z-index: 9998;
 }
 
+.track-list li {
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #3a4a42;
+  padding: 8px 12px;
+  margin: 2px;
+  background-color: #ebf0ee;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
 #menuList.open {
   display: flex;
   flex-direction: column;
@@ -177,7 +192,7 @@ body {
   color: #3a4a42;
 }
 
-header {
+head {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -255,13 +270,6 @@ header {
   line-height: 28px;
   margin: 2em 2em;
   animation-duration: 3s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 300%;
-  }
 }
 
 .social-media ul {
@@ -600,8 +608,125 @@ textarea {
   display: none;
 }
 
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  overflow: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.popup-container .close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  background-color: transparent;
+}
+
+.close2 {
+  display: none;
+}
+
+.track-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.track-img {
+  width: 100%;
+  max-width: auto;
+  height: auto;
+  position: relative;
+  display: inline-block;
+}
+
+.popup-content {
+  overflow-x: hidden;
+}
+
+.track-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: left;
+}
+
+.track-para {
+  color: #344563;
+  font-style: regular;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+#track-header {
+  color: #172b4d;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: left;
+}
+
+.track-buttons {
+  margin-top: 20px;
+}
+
+.btn1,
+.btn2 {
+  display: inline-flex;
+  padding: 15px 20px;
+  background-color: #36b37e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 10px;
+  width: auto;
+}
+
+.btn1 img,
+.btn2 img {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.track-img2 {
+  display: none;
+}
+
+.bt1,
+.bt2 {
+  display: none;
+}
+
+h4 {
+  display: flex;
+  font-size: 24px;
+  color: #172b4d;
+}
+
 @media (min-width: 768px) {
-  .header {
+  .headline {
     background-image: url("images/Header-llustration-desktop@2x.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -749,5 +874,95 @@ textarea {
 
   .line {
     display: none;
+  }
+
+  .track-img1 {
+    display: none;
+  }
+
+  .track-img2 {
+    width: 90%;
+    max-width: auto;
+    position: relative;
+    display: flex;
+    height: 616px;
+    border-radius: 8px;
+    margin-left: 40px;
+    border: 1px solid var(--neutrals-n-40, #dfe1e6);
+    margin-top: 50px;
+  }
+
+  .popup-container .close {
+    display: block;
+    border: none;
+    cursor: pointer;
+    background-color: #ebecf0;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    margin-right: 90px;
+    font-size: 10px;
+  }
+
+  .track-container h4 {
+    color: #172b4d;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    margin-left: 40px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .track-list {
+    margin-left: 40px;
+  }
+
+  .track-para {
+    margin-left: 40px;
+  }
+
+  .btn1,
+  .btn2 {
+    display: none;
+  }
+
+  .bt1,
+  .bt2 {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #36b37e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+
+  .track-header-desktop {
+    display: none;
+  }
+
+  .track-container {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+  }
+
+  .track-header {
+    flex-grow: 1;
+  }
+
+  .track-buttons-2 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    float: right;
+    position: absolute;
+    right: 80px;
+    left: auto;
+    top: 10px;
   }
 }
