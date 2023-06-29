@@ -165,3 +165,16 @@ seeButtons.forEach((button, index) => {
     });
   });
 });
+
+// Validate form
+
+const email = document.querySelector('#email');
+
+email.addEventListener('input', (event) => {
+  const correctInput = event.target.value.toLowerCase();
+  if (event.target.value !== correctInput) {
+    email.setCustomValidity('Please enter your email address using lowercase letters.');
+  } else {
+    email.setCustomValidity('');
+  }
+});
