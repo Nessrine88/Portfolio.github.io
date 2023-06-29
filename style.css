@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +11,7 @@ a {
   cursor: pointer;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 
 label {
   display: block;
@@ -18,7 +20,7 @@ label {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   display: flex;
   align-content: center;
   align-items: center;
@@ -30,12 +32,11 @@ body {
 .background {
   height: max-content;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   background-color: #fff;
   align-items: center;
-  flex-wrap: wrap;
   padding-bottom: 10%;
-  background-image: url(images/bg-contact-form.png);
+  background-image: url("images/bg-contact-form.png");
   background-repeat: no-repeat;
   background-position: bottom 1% right;
 }
@@ -64,7 +65,7 @@ body {
   list-style: none;
 }
 
-#menuList {
+#menu-list {
   display: none;
   list-style-type: none;
   padding: 0;
@@ -92,7 +93,7 @@ body {
   line-height: 16px;
 }
 
-#menuList.open {
+#menu-list.open {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -110,7 +111,7 @@ body {
   font-size: 32px;
 }
 
-#closeButton {
+#close-btton {
   display: none;
 }
 
@@ -141,16 +142,16 @@ body {
   margin: 3% 5%;
 }
 
-#menuList.open ~ #menuIcon {
+#menu-list.open ~ #menu-icon {
   display: none;
 }
 
-#menuList.open ~ #closeIcon {
+#menu-list.open ~ #close-icon {
   display: block;
 }
 
 .skill-list li {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255 255 255);
   padding: 12px;
   border-radius: 8px;
   color: #36b37e;
@@ -179,16 +180,16 @@ body {
   line-height: 16px;
 }
 
-#menuList.open li {
+#menu-list.open li {
   color: var(--theme-2-neutral-2, #3a4a42);
   font-size: 32px;
   font-weight: 600;
   line-height: 44px;
   margin-bottom: 40px;
-  font-family: 'inter', sans-serif;
+  font-family: inter, sans-serif;
 }
 
-#menuList.open li a {
+#menu-list.open li a {
   color: #3a4a42;
 }
 
@@ -235,7 +236,7 @@ head {
   clear: right;
   text-align: center;
   font-weight: 700;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
@@ -245,7 +246,7 @@ head {
 }
 
 @keyframes font-color-change {
-  from {
+  0% {
     color: #ac064b;
   }
 
@@ -254,21 +255,21 @@ head {
   }
 
   75% {
-    color: rgb(250, 6, 6);
+    color: rgb(250 6 6);
   }
 
   100% {
-    color: rgb(255, 187, 0);
+    color: rgb(255 187 0);
   }
 }
 
 .headline p {
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  margin: 2em 2em;
+  margin: 2em;
   animation-duration: 3s;
 }
 
@@ -294,8 +295,7 @@ head {
 
 .my-recent-work {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -304,7 +304,7 @@ head {
 
 .my-work {
   color: #172b4d;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 72px;
@@ -370,12 +370,12 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   color: #3a4a42;
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
-  margin: 2% 2%;
+  margin: 2%;
 }
 
 .flex-list {
@@ -408,7 +408,7 @@ h3 {
 
 .button:hover {
   background-color: #36b37f;
-  box-shadow: 0 8px 16px 0 rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px 0 rgb(54 179 127 / 24%);
   border-radius: 4px;
   animation-name: btn-change;
   animation-duration: 1s;
@@ -452,7 +452,7 @@ h3 {
   justify-content: center;
   height: 316px;
   padding: 2%;
-  margin: 2% 2%;
+  margin: 2%;
   width: 327px;
 }
 
@@ -479,7 +479,7 @@ h3 {
 }
 
 .about-me {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 2em;
@@ -515,7 +515,7 @@ h3 {
 
 .about-me button:hover {
   background-color: #36b37f;
-  box-shadow: 0 8px 16px 0 rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px 0 rgb(54 179 127 / 24%);
   border-radius: 4px;
   animation-name: btn-change;
   animation-duration: 2s;
@@ -540,7 +540,7 @@ h3 {
 }
 
 .get-in-touch {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
@@ -573,7 +573,7 @@ form input {
   border: 1px solid #d0d9d4;
   border-radius: 4px;
   color: #6b778c;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 textarea {
@@ -583,7 +583,7 @@ textarea {
   color: #6b778c;
   width: 71%;
   border: 1px solid #60c095;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
@@ -594,7 +594,7 @@ textarea {
 .email {
   display: flex;
   justify-content: center;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -603,8 +603,8 @@ textarea {
   color: #42526e;
 }
 
-#firstName,
-#lastName {
+#first-name,
+#last-name {
   display: none;
 }
 
@@ -725,7 +725,7 @@ h4 {
   color: #172b4d;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .headline {
     background-image: url("images/Header-llustration-desktop@2x.png");
     background-repeat: no-repeat;
@@ -755,7 +755,7 @@ h4 {
     margin: 0;
     padding: 0;
     color: #172b4d;
-    font-family: 'inter', sans-serif;
+    font-family: inter, sans-serif;
   }
 
   .menu-bar {
@@ -808,7 +808,7 @@ h4 {
 
   .about-me p {
     margin: 0 10em;
-    font-family: 'Inter', sans-serif;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 32px;
@@ -827,7 +827,7 @@ h4 {
   }
 
   .para {
-    font-family: 'Inter', sans-serif;
+    font-family: Inter, sans-serif;
     font-size: 30px;
     font-weight: 700;
     line-height: 52px;
@@ -842,8 +842,8 @@ h4 {
     display: inline-block;
   }
 
-  #firstName,
-  #lastName {
+  #first-name,
+  #last-name {
     display: inline-block;
     margin-right: 2%;
     width: 35%;

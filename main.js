@@ -1,7 +1,7 @@
 // Get necessary elements
-const menuIcon = document.getElementById('menuIcon');
-const closeIcon = document.getElementById('closeIcon');
-const menuList = document.getElementById('menuList');
+const menuIcon = document.getElementById('menu-icon');
+const closeIcon = document.getElementById('close-icon');
+const menuList = document.getElementById('menu-list');
 
 // Add event listener to the menu icon
 menuIcon.addEventListener('click', () => {
