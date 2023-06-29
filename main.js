@@ -175,3 +175,12 @@ email.addEventListener("input", (event) => {
     email.setCustomValidity("Please enter your email address using lowercase letters.");
   } 
 });
+
+// Function to save input data to local storage
+
+export default function preserveData() {
+  function saveFormData() {
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+  }
