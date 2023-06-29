@@ -174,8 +174,6 @@ email.addEventListener("input", (event) => {
   let correctInput= event.target.value.toLowerCase();
   if (event.target.value !== correctInput) {
     email.setCustomValidity("Please enter your email address using lowercase letters.");
-  } else {
-    email.setCustomValidity("");
-  }
+  } 
 });
 
