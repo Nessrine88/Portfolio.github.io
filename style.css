@@ -37,7 +37,7 @@ body {
   padding-bottom: 10%;
   background-image: url(images/bg-contact-form.png);
   background-repeat: no-repeat;
-  background-position: bottom 1% right;
+  background-position: bottom 0.5% right;
 }
 
 .container {
@@ -48,7 +48,6 @@ body {
   align-items: center;
   align-content: center;
   flex-direction: column;
-  margin-top: 3rem 1em;
   padding-bottom: 1em;
 }
 
@@ -173,7 +172,7 @@ body {
   color: #3a4a42;
   padding: 8px 12px;
   margin: 2px;
-  background-color: #ebf0ee;
+  background-color: #cfd2d1;
   font-size: 12px;
   font-weight: 600;
   line-height: 16px;
@@ -498,7 +497,7 @@ h3 {
 }
 
 .about-me button {
-  height: fit-content;
+  height: 100%;
   width: fit-content;
   border-radius: 4px;
   padding: 1em;
@@ -645,7 +644,7 @@ textarea {
 
 .track-img {
   width: 100%;
-  max-width: auto;
+  max-width: 100%;
   height: auto;
   position: relative;
   display: inline-block;
@@ -665,7 +664,6 @@ textarea {
 
 .track-para {
   color: #344563;
-  font-style: regular;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -730,7 +728,6 @@ h4 {
     background-image: url("images/Header-llustration-desktop@2x.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -851,7 +848,8 @@ h4 {
 
   textarea {
     margin-left: 0;
-    height: fit-content;
+    height: 50%;
+    margin-bottom: 50px;
   }
 
   #name {
@@ -882,7 +880,6 @@ h4 {
 
   .track-img2 {
     width: 90%;
-    max-width: auto;
     position: relative;
     display: flex;
     height: 616px;
