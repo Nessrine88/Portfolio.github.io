@@ -1,13 +1,13 @@
 // Get necessary elements
 const menuIcon = document.getElementById('menuIcon');
 const closeIcon = document.getElementById('closeIcon');
-const menuList = document.getElementById('menuList');
+const menuList = document.getElementById('#menuList');
 
 // Add event listener to the menu icon
 menuIcon.addEventListener('click', () => {
   menuIcon.style.display = 'none';
   closeIcon.style.display = 'inline-block';
-  menuList.classList.add('open');
+  menuList.classList.add('.open');
 });
 
 // Add event listener to the close icon
@@ -19,7 +19,7 @@ closeIcon.addEventListener('click', () => {
 
 // Add event listeners to the menu options
 const menuOptions = menuList.getElementsByTagName('a');
-for (let i = 0; i < menuOptions.length; i += 1) {
+for (let i = 0; i <= menuOptions.length; i += 1) {
   menuOptions[i].addEventListener('click', function menuOption(e) {
     e.preventDefault(); // Prevent the default link behavior
 
@@ -178,40 +178,6 @@ email.addEventListener('input', (event) => {
 
 // Function to save input data to local storage
 
-// Verify whether localStorage is both supported and available
-
-function storageAvailable(type) {
-  let storage;
-  try {
-    storage = window[type];
-    const x = '__storage_test__';
-    storage.setItem(x, x);
-    storage.removeItem(x);
-    return true;
-  } catch (e) {
-    return (
-      e instanceof DOMException
-      // everything except Firefox
-      && (e.code === 22
-        // Firefox
-        || e.code === 1014
-        // test name field too, because code might not be present
-        // everything except Firefox
-        || e.name === 'QuotaExceededError'
-        // Firefox
-        || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
-      // acknowledge QuotaExceededError only if there's something already stored
-      && storage
-      && storage.length !== 0
-    );
-  }
-}
-
-if (storageAvailable('localStorage')) {
-  // Yippee! We can use localStorage awesomeness
-} else {
-  // Too bad, no localStorage for us
-}
 
 // Get the form element
 
@@ -229,7 +195,7 @@ form.addEventListener('submit', () => {
     fullName,
     firstName,
     lastName,
-    email,
+    email;
     message,
   };
   const formDataJson = JSON.stringify(formData);
