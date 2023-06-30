@@ -176,7 +176,7 @@ email.addEventListener('input', (event) => {
   }
 });
 
-// Function to save input data to local storage
+
 
 // Verify whether localStorage is both supported and available
 
