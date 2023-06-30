@@ -1,13 +1,13 @@
 // Get necessary elements
 const menuIcon = document.getElementById('menuIcon');
 const closeIcon = document.getElementById('closeIcon');
-const menuList = document.getElementById('menuList');
+const menuList = document.getElementById('#menuList');
 
 // Add event listener to the menu icon
 menuIcon.addEventListener('click', () => {
   menuIcon.style.display = 'none';
   closeIcon.style.display = 'inline-block';
-  menuList.classList.add('open');
+  menuList.classList.add('.open');
 });
 
 // Add event listener to the close icon
@@ -19,7 +19,7 @@ closeIcon.addEventListener('click', () => {
 
 // Add event listeners to the menu options
 const menuOptions = menuList.getElementsByTagName('a');
-for (let i = 0; i < menuOptions.length; i += 1) {
+for (let i = 0; i <= menuOptions.length; i += 1) {
   menuOptions[i].addEventListener('click', function menuOption(e) {
     e.preventDefault(); // Prevent the default link behavior
 
@@ -165,7 +165,6 @@ seeButtons.forEach((button, index) => {
     });
   });
 });
-
 // Validate form
 
 const email = document.querySelector('#email');
@@ -174,7 +173,31 @@ email.addEventListener('input', (event) => {
   const correctInput = event.target.value.toLowerCase();
   if (event.target.value !== correctInput) {
     email.setCustomValidity('Please enter your email address using lowercase letters.');
-  } else {
-    email.setCustomValidity('');
   }
+});
+
+// Function to save input data to local storage
+
+
+// Get the form element
+
+const form = document.getElementById('myForm');
+form.addEventListener('submit', () => {
+  // Get form field values
+  const fullName = document.getElementById('name').value;
+  const firstName = document.getElementById('firstName').value;
+  const lastName = document.getElementById('lastName').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  // Create an object to store the form data
+  const formData = {
+    fullName,
+    firstName,
+    lastName,
+    email;
+    message,
+  };
+  const formDataJson = JSON.stringify(formData);
+  localStorage.setItem('formData', formDataJson);
 });
