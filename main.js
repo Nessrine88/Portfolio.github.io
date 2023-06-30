@@ -216,12 +216,9 @@ if (storageAvailable('localStorage')) {
 // Get the form element
 
 const form = document.getElementById('myForm');
-
-// Add event listener to the form's submit event
 form.addEventListener('submit', (event) => {
-  event.preventDefault();
-
-  // Get form field values
+ 
+ // Get form field values
   const fullName = document.getElementById('name').value;
   const firstName = document.getElementById('firstName').value;
   const lastName = document.getElementById('lastName').value;
@@ -236,10 +233,6 @@ form.addEventListener('submit', (event) => {
     email,
     message,
   };
-
-  // Convert the object to a JSON string
   const formDataJson = JSON.stringify(formData);
-
-  // Store the form data in local storage
   localStorage.setItem('formData', formDataJson);
 });
