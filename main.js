@@ -216,9 +216,8 @@ if (storageAvailable('localStorage')) {
 // Get the form element
 
 const form = document.getElementById('myForm');
-form.addEventListener('submit', (event) => {
- 
- // Get form field values
+form.addEventListener('submit', () => {
+  // Get form field values
   const fullName = document.getElementById('name').value;
   const firstName = document.getElementById('firstName').value;
   const lastName = document.getElementById('lastName').value;
