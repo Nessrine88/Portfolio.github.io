@@ -53,19 +53,23 @@ const seeButtons = section.querySelectorAll('.button.see');
 const buttonContent = [
   {
     title: 'Button 1',
-    imgSrc1: 'images/Snapshoot Portfolio.png',
-    imgSrc2: 'images/snapshoot desktop.png',
+    imgSrc1: 'images/first-project.png',
+    imgSrc2: 'images/first-project.png',
     head: 'Keeping track of hundreds of components',
     tech: ['JavaScript', 'Ruby', 'HTML', 'CSS'],
-    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    para: "This is a website for a Prickly Pear Seed Oils company. The website showcases the products, benefits, and uses of Prickly Pear Seed Oils. It aims to promote the company's products, educate visitors about the properties of Prickly Pear Seed Oils, and provide an easy way to purchase the oils online.The project is implemented using HTML, CSS, and JavaScript. It follows a responsive design approach, ensuring that the website looks great and functions well on different devices and screen sizes. The website features an attractive and intuitive user interface, allowing visitors to explore the various products, learn about their benefits, and make purchases with ease.",
+    liveLink: 'https://nessrine88.github.io/Capstone-Project/index.html',
+    srcLink: 'https://github.com/Nessrine88/Capstone-Project',
   },
   {
     title: 'Button 2',
-    imgSrc1: 'images/Snapshoot Portfolio.png',
-    imgSrc2: 'images/snapshoot desktop.png',
+    imgSrc1: 'images/second-project.png',
+    imgSrc2: 'images/second-project.png',
     head: 'Keeping track of hundreds of components',
     tech: ['JavaScript', 'Ruby', 'HTML', 'CSS'],
-    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    para: "This project utilizes HTML, CSS, and JavaScript along with an open API to showcase movies and series featuring female protagonists. You're able to engage by liking or commenting on any film within the collection.",
+    liveLink: 'https://nessrine88.github.io/Capstone-Project2/dist/',
+    srcLink: ' https://github.com/Nessrine88/Capstone-Project2',
   },
   {
     title: 'Button 3',
@@ -129,7 +133,7 @@ seeButtons.forEach((button, index) => {
           
 
           <div class="track-buttons-2">
-            <a href="#"><button type="button" class="bt1">See live <img src="images/see live icon.svg" alt=""></button></a>
+            <a href=${content.liveLink}><button type="button" class="bt1">See live <img src="images/see live icon.svg" alt=""></button></a>
             <a href="#"><button type="button" class="bt2">See source <img src="images/vector.svg" alt=""></button></a>
           </div>
 
@@ -154,8 +158,8 @@ seeButtons.forEach((button, index) => {
     seeSourceButton.textContent = 'See Source';
 
     // Set the dynamic link for "See Live" button
-    seeLiveButton.parentElement.href = 'https://nessrine88.github.io/Portfolio.github.io/';
-    seeSourceButton.parentElement.href = 'https://github.com/Nessrine88';
+    seeLiveButton.parentElement.href = `${content.liveLink}`;
+    seeSourceButton.parentElement.href = `${content.srcLink}`;
     main.appendChild(popup);
     body.appendChild(main);
 

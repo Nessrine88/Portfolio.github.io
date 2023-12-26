@@ -341,12 +341,19 @@ head {
 
 .upper-row {
   background-color: #ebf0ee;
-  padding: 1em;
-  width: auto;
-  height: 45%;
+  width: 100%;
+  max-width: 350px;
+  height: 70%;
   border: #d0d9d4 1px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
+.upper-row img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .lower-row {
   background-color: #fff;
   flex: 1;
@@ -354,9 +361,12 @@ head {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: auto;
+  width: 100%;
   border-radius: 10px;
   border: #d0d9d4 1px;
+  max-width: 350px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .lower-row ul {
@@ -644,7 +654,7 @@ textarea {
 
 .track-img {
   width: 100%;
-  max-width: 100%;
+  max-width: 400px;
   height: auto;
   position: relative;
   display: inline-block;
