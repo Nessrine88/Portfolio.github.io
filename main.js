@@ -61,8 +61,8 @@ const buttonContent = [
   },
   {
     title: 'Button 3',
-    imgSrc1: 'images/index-air.PNG',
-    imgSrc2: 'images/index-air.PNG',
+    imgSrc1: 'images/air-project.PNG',
+    imgSrc2: 'images/air-project.PNG',
     head: 'Keeping track of hundreds of components',
     tech: ['JavaScript', 'Ruby', 'HTML', 'CSS'],
     para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",

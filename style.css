@@ -358,6 +358,7 @@ head {
   background-color: #ebf0ee;
   width: 100%;
   max-width: 350px;
+  min-height: 50%;
   height: 60%;
   border: #d0d9d4 1px;
   background-size: contain;
