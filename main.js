@@ -1,65 +1,53 @@
-// Get necessary elements
 const menuIcon = document.getElementById('menuIcon');
 const closeIcon = document.getElementById('closeIcon');
 const menuList = document.getElementById('menuList');
 
-// Add event listener to the menu icon
 menuIcon.addEventListener('click', () => {
   menuIcon.style.display = 'none';
   closeIcon.style.display = 'inline-block';
   menuList.classList.add('open');
 });
 
-// Add event listener to the close icon
 closeIcon.addEventListener('click', () => {
   menuIcon.style.display = 'inline-block';
   closeIcon.style.display = 'none';
   menuList.classList.remove('open');
 });
 
-// Add event listeners to the menu options
 const menuOptions = menuList.getElementsByTagName('a');
 for (let i = 0; i < menuOptions.length; i += 1) {
   menuOptions[i].addEventListener('click', function menuOption(e) {
-    e.preventDefault(); // Prevent the default link behavior
+    e.preventDefault();
 
-    const target = this.getAttribute('href'); // Get the target section ID
-    const targetSection = document.querySelector(target); // Find the target section
+    const target = this.getAttribute('href');
+    const targetSection = document.querySelector(target);
 
-    // Scroll to the target section smoothly
     targetSection.scrollIntoView({
       behavior: 'auto',
     });
 
-    // Close the menu
     menuIcon.style.display = 'inline-block';
     closeIcon.style.display = 'none';
     menuList.classList.remove('open');
   });
 }
 
-// popup-section
-
-// popup-section
-
 const body = document.querySelector('body');
 const section = document.querySelector('#portofolio');
 
-// Select cards and "See Project" buttons
-
 const seeButtons = section.querySelectorAll('.button.see');
 
-// Define the content for each button
 const buttonContent = [
+
   {
     title: 'Button 1',
-    imgSrc1: 'images/first-project.png',
-    imgSrc2: 'images/first-project.png',
+    imgSrc1: 'images/recipe-app.PNG',
+    imgSrc2: 'images/recipe-app.PNG',
     head: 'Keeping track of hundreds of components',
     tech: ['JavaScript', 'Ruby', 'HTML', 'CSS'],
-    para: "This is a website for a Prickly Pear Seed Oils company. The website showcases the products, benefits, and uses of Prickly Pear Seed Oils. It aims to promote the company's products, educate visitors about the properties of Prickly Pear Seed Oils, and provide an easy way to purchase the oils online.The project is implemented using HTML, CSS, and JavaScript. It follows a responsive design approach, ensuring that the website looks great and functions well on different devices and screen sizes. The website features an attractive and intuitive user interface, allowing visitors to explore the various products, learn about their benefits, and make purchases with ease.",
-    liveLink: 'https://nessrine88.github.io/Capstone-Project/index.html',
-    srcLink: 'https://github.com/Nessrine88/Capstone-Project',
+    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    liveLink: 'https://recipe-app-ness-7b64be69e9e6.herokuapp.com/users/sign_in',
+    srcLink: 'https://github.com/Nessrine88/My-recipe-book',
   },
   {
     title: 'Button 2',
@@ -73,27 +61,33 @@ const buttonContent = [
   },
   {
     title: 'Button 3',
-    imgSrc1: 'images/Snapshoot Portfolio.png',
-    imgSrc2: 'images/snapshoot desktop.png',
+    imgSrc1: 'images/index-air.PNG',
+    imgSrc2: 'images/index-air.PNG',
     head: 'Keeping track of hundreds of components',
     tech: ['JavaScript', 'Ruby', 'HTML', 'CSS'],
     para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    liveLink: 'https://nessrine88.github.io/Air-quality-index/',
+    srcLink: 'https://github.com/Nessrine88/Air-quality-index',
   },
   {
     title: 'Button 4',
-    imgSrc1: 'images/Snapshoot Portfolio.png',
-    imgSrc2: 'images/snapshoot desktop.png',
+    imgSrc1: 'images/3Dportfolio.PNG',
+    imgSrc2: 'images/3Dportfolio.PNG',
     head: 'Keeping track of hundreds of components',
     tech: ['JavaScript', 'Ruby', 'HTML', 'CSS'],
-    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    para: "This is a website for a Prickly Pear Seed Oils company. The website showcases the products, benefits, and uses of Prickly Pear Seed Oils. It aims to promote the company's products, educate visitors about the properties of Prickly Pear Seed Oils, and provide an easy way to purchase the oils online.The project is implemented using HTML, CSS, and JavaScript. It follows a responsive design approach, ensuring that the website looks great and functions well on different devices and screen sizes. The website features an attractive and intuitive user interface, allowing visitors to explore the various products, learn about their benefits, and make purchases with ease.",
+    liveLink: 'https://nessrine88.github.io/3DPortfolio/',
+    srcLink: 'https://github.com/Nessrine88/3DPortfolio',
   },
   {
     title: 'Button 5',
-    imgSrc1: 'images/Snapshoot Portfolio.png',
-    imgSrc2: 'images/snapshoot desktop.png',
+    imgSrc1: 'images/spacehub.png',
+    imgSrc2: 'images/spacehub.png',
     head: 'Keeping track of hundreds of components',
     tech: ['JavaScript', 'Ruby', 'HTML', 'CSS'],
     para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    liveLink: 'https://nessrine88.github.io/React-redux-Group-Project/',
+    srcLink: 'https://github.com/Nessrine88/React-redux-Group-Project',
   },
   {
     title: 'Button 6',
@@ -102,6 +96,16 @@ const buttonContent = [
     head: 'Keeping track of hundreds of components',
     tech: ['JavaScript', 'Ruby', 'HTML', 'CSS'],
     para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+  },
+  {
+    title: 'Button 6',
+    imgSrc1: 'images/first-project.png',
+    imgSrc2: 'images/first-project.png',
+    head: 'Keeping track of hundreds of components',
+    tech: ['JavaScript', 'Ruby', 'HTML', 'CSS'],
+    para: "This is a website for a Prickly Pear Seed Oils company. The website showcases the products, benefits, and uses of Prickly Pear Seed Oils. It aims to promote the company's products, educate visitors about the properties of Prickly Pear Seed Oils, and provide an easy way to purchase the oils online.The project is implemented using HTML, CSS, and JavaScript. It follows a responsive design approach, ensuring that the website looks great and functions well on different devices and screen sizes. The website features an attractive and intuitive user interface, allowing visitors to explore the various products, learn about their benefits, and make purchases with ease.",
+    liveLink: 'https://nessrine88.github.io/Capstone-Project/index.html',
+    srcLink: 'https://github.com/Nessrine88/Capstone-Project',
   },
 ];
 
