@@ -359,7 +359,7 @@ head {
   width: 100%;
   max-width: 350px;
   min-height: 50%;
-  height: 60%;
+  height: 50%;
   border: #d0d9d4 1px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -526,6 +526,10 @@ h3 {
   background-position: center;
   overflow: hidden;
   height: auto;
+}
+
+.about-me a {
+  color: #fff;
 }
 
 .about-me button {
