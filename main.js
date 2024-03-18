@@ -45,7 +45,7 @@ const buttonContent = [
     imgSrc2: 'images/recipe-app.PNG',
     head: 'Keeping track of hundreds of components',
     tech: ['JavaScript', 'Ruby', 'HTML', 'CSS'],
-    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    para: "The Recipe app keeps track of all your recipes, ingredients. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app should allow you to make them public so anyone can access them.",
     liveLink: 'https://recipe-app-ness-7b64be69e9e6.herokuapp.com/users/sign_in',
     srcLink: 'https://github.com/Nessrine88/My-recipe-book',
   },
@@ -65,7 +65,7 @@ const buttonContent = [
     imgSrc2: 'images/air-project.PNG',
     head: 'Keeping track of hundreds of components',
     tech: ['JavaScript', 'Ruby', 'HTML', 'CSS'],
-    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    para: "Welcome to Air-Quality-Index-Tunisia web single page application! This project aims to provide current air pollution data for any coordinates on the globe. This README will guide you through setting up the application and understanding its structure.",
     liveLink: 'https://nessrine88.github.io/Air-quality-index/',
     srcLink: 'https://github.com/Nessrine88/Air-quality-index',
   },
@@ -85,35 +85,26 @@ const buttonContent = [
     imgSrc2: 'images/spacehub.png',
     head: 'Keeping track of hundreds of components',
     tech: ['JavaScript', 'Ruby', 'HTML', 'CSS'],
-    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
+    para: "In this project, we will leverage real-time data from the SpaceX API to develop a web application. The focus of this application is to create a platform for a company specializing in both commercial and scientific space travel services. Within this web application, users will have the capability to reserve rockets and participate in specific space missions.",
     liveLink: 'https://nessrine88.github.io/React-redux-Group-Project/',
     srcLink: 'https://github.com/Nessrine88/React-redux-Group-Project',
   },
   {
     title: 'Button 6',
-    imgSrc1: 'images/Snapshoot Portfolio.png',
-    imgSrc2: 'images/snapshoot desktop.png',
+    imgSrc1: 'images/mathmagician.PNG',
+    imgSrc2: 'images/mathmagician.PNG',
     head: 'Keeping track of hundreds of components',
     tech: ['JavaScript', 'Ruby', 'HTML', 'CSS'],
-    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
-  },
-  {
-    title: 'Button 6',
-    imgSrc1: 'images/first-project.png',
-    imgSrc2: 'images/first-project.png',
-    head: 'Keeping track of hundreds of components',
-    tech: ['JavaScript', 'Ruby', 'HTML', 'CSS'],
-    para: "This is a website for a Prickly Pear Seed Oils company. The website showcases the products, benefits, and uses of Prickly Pear Seed Oils. It aims to promote the company's products, educate visitors about the properties of Prickly Pear Seed Oils, and provide an easy way to purchase the oils online.The project is implemented using HTML, CSS, and JavaScript. It follows a responsive design approach, ensuring that the website looks great and functions well on different devices and screen sizes. The website features an attractive and intuitive user interface, allowing visitors to explore the various products, learn about their benefits, and make purchases with ease.",
-    liveLink: 'https://nessrine88.github.io/Capstone-Project/index.html',
-    srcLink: 'https://github.com/Nessrine88/Capstone-Project',
+    para: "Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and Read a random math-related quote.",
+    liveLink: 'https://nessrine88.github.io/Math-Magicians-Website/',
+    srcLink: 'https://github.com/Nessrine88/Math-Magicians-Website',
   },
 ];
 
 // Event listener for "See Project" buttons
-seeButtons.forEach((button, index) => {
+document.querySelectorAll('.button.see').forEach((button, index) => {
   button.addEventListener('click', () => {
     const content = buttonContent[index];
-
     const main = document.createElement('div');
     main.classList.add('popup-container');
 
@@ -121,61 +112,51 @@ seeButtons.forEach((button, index) => {
     popup.classList.add('popup-content');
 
     popup.innerHTML = `
-
-    <div class="btn-img">
-          <button class="close" type="button">
-            <img id="cls-icon" src="images/Icon - Cancel.svg" alt="">
-          </button>
-      <div class="track-container">
-        
+      <div class="btn-img">
+        <button class="close" type="button">
+          <img id="cls-icon" src="images/Icon - Cancel.svg" alt="">
+        </button>
+        <div class="track-container">
           <img class="track-img1" src="${content.imgSrc1}" alt="" srcset="">
           <img class="track-img2" src="${content.imgSrc2}" alt="" srcset="">
         </div>
-       <div class="track-container">
-          
-            <h4>${content.head}</h4>
-          
-
+        <div class="track-container">
+          <h4>${content.head}</h4>
           <div class="track-buttons-2">
-            <a href=${content.liveLink}><button type="button" class="bt1">See live <img src="images/see live icon.svg" alt=""></button></a>
-            <a href="#"><button type="button" class="bt2">See source <img src="images/vector.svg" alt=""></button></a>
+            <a href="${content.liveLink}" target="_blank">
+              <button type="button" class="bt1">See live <img src="images/see live icon.svg" alt=""></button>
+            </a>
+            <a href="${content.srcLink}" target="_blank">
+              <button type="button" class="bt2">See source <img src="images/vector.svg" alt=""></button>
+            </a>
           </div>
-
-          </div>
+        </div>
         <ul class="track-list">
           ${content.tech.map((tech) => `<li>${tech}</li>`).join('')}
         </ul>
         <p class="track-para">${content.para}</p>
       </div>
       <div class="track-buttons">
-        <a href="#"><button type="button" class="btn1">See live <img src="images/see live icon.svg" alt=""></button></a>
-        <a href="#"><button type="button" class="btn2">See source <img src="images/vector.svg" alt=""></button></a>
+        <a href="${content.liveLink}" target="_blank">
+          <button type="button" class="btn1">See live <img src="images/see live icon.svg" alt=""></button>
+        </a>
+        <a href="${content.srcLink}" target="_blank">
+          <button type="button" class="btn2">See source <img src="images/vector.svg" alt=""></button>
+        </a>
       </div>
     `;
-    // Get the dynamically created buttons
-    const seeLiveButton = popup.querySelector('.bt1');
-    const seeSourceButton = popup.querySelector('.bt2');
 
-    // Set the dynamic content for "See Live" button
-    seeLiveButton.textContent = 'See Live';
-    // Set the dynamic content for "See Source" button
-    seeSourceButton.textContent = 'See Source';
-
-    // Set the dynamic link for "See Live" button
-    seeLiveButton.parentElement.href = `${content.liveLink}`;
-    seeSourceButton.parentElement.href = `${content.srcLink}`;
     main.appendChild(popup);
-    body.appendChild(main);
+    document.body.appendChild(main);
 
     const close = popup.querySelector('.close');
     close.addEventListener('click', () => {
-      body.removeChild(main);
+      document.body.removeChild(main);
     });
   });
 });
 
 // Validate form
-
 const email = document.querySelector('#email');
 
 email.addEventListener('input', (event) => {
