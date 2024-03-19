@@ -813,6 +813,23 @@ h4 {
     flex-direction: column;
     padding-bottom: 20%;
   }
+  .oscille {
+    width: 100px;
+    opacity: 0.5;
+    position: absolute;
+    top: 80%;
+    right: 50%;
+    animation: oscillation 2s ease-in-out infinite alternate;
+}
+
+@keyframes oscillation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
 
   .primary {
     margin-top: 3em;
