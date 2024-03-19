@@ -793,8 +793,19 @@ h4 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-   }
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
   .headline {
     display: flex;
     justify-content: center;
