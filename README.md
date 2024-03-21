@@ -1,8 +1,8 @@
-# -Protofolio-
+# -Portfolio-
 
 <div align="center">
 
-  <h3><b>My-Protofolio</b></h3>
+  <h3><b>My-Portfolio</b></h3>
 
 </div>
 # 📗 Table of Contents
@@ -26,7 +26,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
-# 📖 [Protofolio] <a name="about-project"></a>
+# 📖 [Portfolio] <a name="about-project"></a>
 
 > This is a webpage built by HTML CSS wich includes linters
 
