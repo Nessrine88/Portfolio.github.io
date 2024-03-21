@@ -24,9 +24,19 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #fff;
+  overflow-x: hidden;
 }
 
+    @media (prefers-reduced-motion: no-preference)
+  {.card {
+    scale: .8; opacity: 0;
+    animation: fadeIn linear forwards;
+    animation-timeline: view();
+    animation-range: 250px 500px;
+  }
+  @keyframes fadeIn {
+    to {scale: 1; opacity: 1;}
+  }}
 
 .header {
   background-image: url("images/header-illsutration-mobile@2x.png");
@@ -68,7 +78,7 @@ body {
   list-style: none;
 }
 .acheivement {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: bold;
   color: #344563;
   font-style: italic;
@@ -232,26 +242,6 @@ head {
   animation-name: slideInFromLeft ;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
-}
-.card {
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-@keyframes fadeIn {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-
-.fade-in {
-  animation: fadeIn  2s forwards;
 }
 
 .headline ul {
@@ -823,7 +813,7 @@ h4 {
 @media (min-width: 768px) {
   #menuList {
     display: flex;
-    padding-bottom: 2rem;
+    padding-bottom: 0.5rem;
     position: relative;
   }
   #menuList a {
@@ -849,24 +839,8 @@ h4 {
     align-items: center;
     flex-direction: column;
     padding-bottom: 20%;
+    
   }
-  .oscille {
-    width: 100px;
-    opacity: 0.5;
-    position: absolute;
-    top: 80%;
-    right: 50%;
-    animation: oscillation 2s ease-in-out infinite alternate;
-}
-
-@keyframes oscillation {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(20px);
-    }
-}
 
   .primary {
     margin-top: 3em;
@@ -878,6 +852,7 @@ h4 {
     width: 100%;
     z-index: 9999;
     position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0, 133, 82, 0.2); 
   }
 
   .toolbar a {
@@ -895,7 +870,6 @@ h4 {
   }
 
   .toolbar li {
-    margin-top: 4%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -903,6 +877,7 @@ h4 {
     margin-right: 20px;
     font-weight: 500;
     font-size: 14px;
+    padding: 0.8rem;
   }
 
   .toolbar img {
@@ -1107,5 +1082,15 @@ h4 {
     color: #344563;
     font-style: italic;
   }
+    @media (prefers-reduced-motion: no-preference)
+  {.card {
+    scale: .8; opacity: 0;
+    animation: fadeIn linear forwards;
+    animation-timeline: view();
+    animation-range: 250px 500px;
+  }
+  @keyframes fadeIn {
+    to {scale: 1; opacity: 1;}
+  }}
 
 }

@@ -166,29 +166,3 @@ email.addEventListener('input', (event) => {
     email.setCustomValidity('');
   }
 });
-
-window.addEventListener('scroll', function() {
-  let cards = document.querySelectorAll('.card');
-
-  cards.forEach(function(card) {
-    if (isElementInViewport(card, 200)) { // Adjust the buffer (200 in this case) as needed
-      if (!card.classList.contains('fade-in')) {
-        card.classList.add('fade-in');
-      }
-    } else {
-      card.classList.remove('fade-in'); // Remove animation class when element is outside viewport
-    }
-  });
-});
-
-function isElementInViewport(el, buffer) {
-  var rect = el.getBoundingClientRect();
-  var bufferPixels = buffer; // Buffer is provided in pixels
-
-  return (
-    rect.top <= (window.innerHeight - bufferPixels) &&
-    rect.bottom >= bufferPixels &&
-    rect.left >= 0 &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
