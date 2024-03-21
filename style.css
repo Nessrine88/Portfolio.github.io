@@ -27,6 +27,7 @@ body {
   background-color: #fff;
 }
 
+
 .header {
   background-image: url("images/header-illsutration-mobile@2x.png");
   background-repeat: no-repeat;
@@ -66,7 +67,12 @@ body {
   justify-content: center;
   list-style: none;
 }
-
+.acheivement {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #344563;
+  font-style: italic;
+}
 #menuList {
   position: fixed;
   display: none;
@@ -233,7 +239,7 @@ head {
 
 
 .fade-in {
-  animation: fadeIn  1s forwards;
+  animation: fadeIn  2s forwards;
 }
 
 .headline ul {
@@ -315,6 +321,7 @@ head {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .social-media img {
@@ -1082,4 +1089,11 @@ h4 {
     left: auto;
     top: 10px;
   }
+  .acheivement {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #344563;
+    font-style: italic;
+  }
+
 }
