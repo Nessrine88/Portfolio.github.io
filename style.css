@@ -138,6 +138,9 @@ body {
   justify-content: center;
   align-items: center;
   margin: 3% 5%;
+  animation-name: slideInFromLeft;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
 }
 
 #menuList.open ~ #menuIcon {
@@ -205,6 +208,32 @@ head {
   align-content: center;
   flex-direction: column;
   font-size: 0.5rem;
+  margin-top: 5rem;
+}
+.headline h2 {
+  animation-name: slideInFromLeft ;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+.card {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.fade-in {
+  animation: fadeIn  1s forwards;
 }
 
 .headline ul {
@@ -793,19 +822,8 @@ h4 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    animation-name: fadeIn;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
   .headline {
     display: flex;
     justify-content: center;
@@ -840,6 +858,7 @@ h4 {
     background-color: white;
     width: 100%;
     z-index: 9999;
+    position: fixed;
   }
 
   .toolbar a {
@@ -874,6 +893,9 @@ h4 {
   .headline p {
     margin: 0 16em;
     font-size: 20px;
+    animation-name: slideInFromLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
   }
 
   .grid-container {
