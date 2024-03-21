@@ -213,9 +213,21 @@ head {
   align-items: center;
   align-content: center;
   flex-direction: column;
-  font-size: 0.5rem;
+  font-size: 1.5rem; /* Adjust the font size as needed */
   margin-top: 5rem;
+  opacity: 0; /* Initially hide the element */
+  animation: fadeIn 1s ease forwards; /* Apply the fade-in animation */
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with transparency */
+  }
+  to {
+    opacity: 1; /* Fade in to full opacity */
+  }
+}
+
 .headline h2 {
   animation-name: slideInFromLeft ;
   animation-duration: 0.5s;

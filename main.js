@@ -50,7 +50,7 @@ const buttonContent = [
     srcLink: 'https://github.com/Nessrine88/My-recipe-book',
   },
   {
-    head : 'Movies and series',
+    head : 'Tv-series',
     title: 'Button 2',
     imgSrc1: 'images/second-project.png',
     imgSrc2: 'images/second-project.png',
