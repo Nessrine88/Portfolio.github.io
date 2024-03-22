@@ -1090,7 +1090,9 @@ h4 {
     animation-range: 250px 500px;
   }
   @keyframes fadeIn {
-    to {scale: 1; opacity: 1;}
-  }}
+    0% { transform: translateX(-100%); opacity: 0; }
+    to { scale: 1; opacity: 1; }
+  }
+  }  
 
 }
