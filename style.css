@@ -27,16 +27,19 @@ body {
   overflow-x: hidden;
 }
 
-    @media (prefers-reduced-motion: no-preference)
-  {.card {
-    scale: 1; opacity: 0;
+@media (prefers-reduced-motion: no-preference) {
+  .card {
+    scale: 1;
+    opacity: 0;
     animation: fadeIn linear forwards;
     animation-timeline: view();
     animation-range: 250px 500px;
   }
+
   @keyframes fadeIn {
-    to {scale: 1; opacity: 1;}
-  }}
+    to { scale: 1; opacity: 1; }
+  }
+}
 
 .header {
   background-image: url("images/header-illsutration-mobile@2x.png");
@@ -44,6 +47,7 @@ body {
   background-position: center;
   background-size: cover;
 }
+
 .background {
   height: max-content;
   display: flex;
@@ -77,12 +81,14 @@ body {
   justify-content: center;
   list-style: none;
 }
+
 .acheivement {
   font-size: 0.8rem;
   font-weight: bold;
   color: #344563;
   font-style: italic;
 }
+
 #menuList {
   position: fixed;
   display: none;
@@ -233,13 +239,14 @@ head {
   from {
     opacity: 0; /* Start with transparency */
   }
+
   to {
     opacity: 1; /* Fade in to full opacity */
   }
 }
 
 .headline h2 {
-  animation-name: slideInFromLeft ;
+  animation-name: slideInFromLeft;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
 }
@@ -250,18 +257,22 @@ head {
   justify-content: center;
   margin: 3rem 4rem;
 }
+
 .headline h2 {
   margin-top: 3rem;
   font-size: 2rem;
 }
+
 .headline span {
   color: #008552;
 }
+
 .headline p {
   font-size: 0.5rem;
   margin: 0;
   padding: 0;
 }
+
 .arrow-btn {
   margin-top: 6em;
   transition: all 0.5s ease-out;
@@ -357,7 +368,6 @@ head {
   line-height: 72px;
   text-align: center;
   margin-bottom: 1em;
-  
   display: flex;
   flex-wrap: wrap;
 }
@@ -385,11 +395,12 @@ head {
   border: #d0d9d4 solid 1px;
   padding: 0;
   margin: 1em;
-  transition: transform 0.6s ease-in-out, box-shadow 0.3s ease-in-out;;
+  transition: transform 0.6s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
 .card:hover {
   transform: scale(1.07);
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .upper-row {
@@ -403,11 +414,13 @@ head {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .upper-row img {
   width: 100%;
   height: 100%;
   object-fit: center;
 }
+
 .lower-row {
   background-color: #fff;
   flex: 1;
@@ -521,7 +534,7 @@ h3 {
 
 .my-skills:hover {
   transform: scale(1.05);
-  box-shadow: 0px 8px 16px rgb(0.68, 0.167, 0.3);
+  box-shadow: 0 8px 16px rgb(0.68, 0.167, 0.3);
   transform-origin: center center;
 }
 
@@ -759,10 +772,12 @@ textarea {
 .track-buttons {
   margin-top: 20px;
 }
+
 .track-buttons button:hover {
   background-color: #172b4d;
   filter: brightness(120%);
 }
+
 .track-header-desktop {
   display: none;
 }
@@ -816,6 +831,7 @@ h4 {
     padding-bottom: 0.5rem;
     position: relative;
   }
+
   #menuList a {
     color: #008552;
     font-weight: bold;
@@ -825,13 +841,13 @@ h4 {
   #menuList a:hover {
     text-decoration: underline;
   }
-  
+
   .header {
     background-image: url("images/Header-llustration-desktop@2x.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
+  }
 
   .headline {
     display: flex;
@@ -839,7 +855,6 @@ h4 {
     align-items: center;
     flex-direction: column;
     padding-bottom: 20%;
-    
   }
 
   .primary {
@@ -852,7 +867,7 @@ h4 {
     width: 100%;
     z-index: 9999;
     position: fixed;
-    box-shadow: 0 4px 8px 0 rgba(0, 133, 82, 0.2); 
+    box-shadow: 0 4px 8px 0 rgba(0, 133, 82, 0.2);
   }
 
   .toolbar a {
@@ -1047,20 +1062,21 @@ h4 {
     margin-top: 20px;
   }
 
- 
-.header span {
-  margin: 0;
-  padding: 0;
-}
-.track-header-desktop {
-  display: none;
-}
 
-.track-container {
-  display: flex;
-  position: relative;
-  justify-content: flex-start;
-}
+  .header span {
+    margin: 0;
+    padding: 0;
+  }
+
+  .track-header-desktop {
+    display: none;
+  }
+
+  .track-container {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+  }
 
   .track-header {
     flex-grow: 1;
@@ -1076,23 +1092,26 @@ h4 {
     left: auto;
     top: 10px;
   }
+
   .acheivement {
     font-size: 1rem;
     font-weight: bold;
     color: #344563;
     font-style: italic;
   }
-    @media (prefers-reduced-motion: no-preference)
-  {.card {
-    scale: .8; opacity: 0;
-    animation: fadeIn linear forwards;
-    animation-timeline: view();
-    animation-range: 200px 350px;
-  }
-  @keyframes fadeIn {
-    0% { transform: translateX(-100%); opacity: 0; }
-    to { scale: 1; opacity: 1; }
-  }
-  }  
 
+  @media (prefers-reduced-motion: no-preference) {
+    .card {
+      scale: 0.8;
+      opacity: 0;
+      animation: fadeIn linear forwards;
+      animation-timeline: view();
+      animation-range: 200px 350px;
+    }
+
+    @keyframes fadeIn {
+      0% { transform: translateX(-100%); opacity: 0; }
+      to { scale: 1; opacity: 1; }
+    }
+  }
 }
